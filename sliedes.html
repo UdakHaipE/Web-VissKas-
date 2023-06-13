@@ -1,0 +1,111 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VissKas Darbnīca</title>
+    <link rel="stylesheet" type="text/css" href="main.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+</head>
+
+<script src="main.js"></script>
+<script src="carousel.js"defer></script>
+<script src="sliedes.js"defer></script>
+
+<body>
+    <nav class="navbar has-background-grey-light is-fixed-top">
+        <div class="navbar-brand">
+            <a href="index.html" class="navbar-item">
+                <img src="images/home.png" width="40" heigth="80">
+            </a>
+            <a  class="navbar-burger" data-target="MenuNav">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+        <div class="navbar-menu" id="MenuNav">
+            <div class="navbar-start">
+                <a href="index.html" class="navbar-item">
+                    Sākumlapa
+                </a>
+                <a href="contact.html" class="navbar-item">
+                    Serviss
+                </a>
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link">
+                    Par Mums
+                    </a>
+                <div class="navbar-dropdown">
+                    <a href="contact.html" class="navbar-item">
+                        Kontakti
+                    </a>
+                    <a href="location.html" class="navbar-item">
+                        Lokācija
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+    </nav>
+    <main>
+    <div class="carousel">
+        <button class="carousel_button carousel_button--left is-hidden">
+            <img src="images/arrow-right.png" alt="" style="transform: scaleX(-1)">
+        </button>
+        <div class="carousel_track-container">
+            <ul class="carousel_track">
+                <li class="carousel_slide current-slide">
+                    <img class="carousel_image" src="images/slide1.jpg" alt="">
+                </li>
+                <li class="carousel_slide">
+                    <img class="carousel_image" src="images/slide2.jpg" alt="">
+                </li>
+                <li class="carousel_slide">
+                    <img class="carousel_image" src="images/slide3.jpg" alt="">
+                </li>
+            </ul> 
+        </div>
+        <button class="carousel_button carousel_button--right">
+            <img src="images/arrow-right.png" alt="">
+        </button>
+        <div class="carousel_nav">
+            <button class="carousel_indicator current-slide"></button>
+            <button class="carousel_indicator"></button>
+            <button class="carousel_indicator"></button>
+        </div>
+    </div>
+    <div class="List">
+        <div class="first">
+            <a href="#"><button id="sliede1" class="button sliede1"><h1>Husqvarna 1/4" ar šauro stiprinājumu</h1></button></a>
+        </div>
+        <div class="bgSliede1">
+            <div class="contentSliede1">
+                <div class="closeSliede1">
+                    +
+                </div>
+                <img id ="productPic" src="images/sliede2.png" alt="">
+                <p>
+                    <b>Nosaukums:</b> Husqvarrna 1/4" ar šauro stiprinājumu <br>
+                    <b>Garums:</b> 12 collas/30CM <br>
+                    <b>Solis:</b> 1/4 <br>
+                    <b>Vadīklas platums:</b> 1.3mm <br>
+                    <b>Cena(€):</b> 32.90€<br>
+                    <p>Lai sazinātos ar mums skaties "Serviss" lapā</p>
+                </p>
+            </div>
+        </div>
+    </div>
+    <section class="sidebar">
+        <div class="columns">
+                <div class="menu">
+                    <ul class="menu-list">
+                        <li><a href="sliedes.html" class="menu-item"><span class="text">Sliedes</span></a></li>
+                        <li><a href="SKR" class="menu-item"><span class="text">Ķēdes</span></a></li>
+                        <li><a href="SKR" class="menu-item"><span class="text">Auklas</span></a></li>
+                        <li><a href="SKR" class="menu-item"><span class="text">Siksnas</span></a></li>
+                        <li><a href="SKR" class="menu-item"><span class="text">Gaisa Filtri</span></a></li>
+                        <li><a href="SKR" class="menu-item"><span class="text">Uzkabes</span></a></li>
+                        <li><a href="SKR" class="menu-item"><span class="text">Eļļas</span></a></li>
+                    </ul>
+                </div>
+        </div>
+    </section>

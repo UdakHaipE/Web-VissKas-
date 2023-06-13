@@ -1,0 +1,108 @@
+html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VissKas Darbnīca</title>
+    <link rel="stylesheet" type="text/css" href="main.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+</head>
+
+<script src="main.js"></script>
+<script src="carousel.js"defer></script>
+<script src="product.js"defer></script>
+
+<body>
+    <nav class="navbar has-background-grey-light is-fixed-top">
+        <div class="navbar-brand">
+            <a href="index.html" class="navbar-item">
+                <img src="images/home.png" width="40" heigth="80">
+            </a>
+            <a  class="navbar-burger" data-target="MenuNav">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+        <div class="navbar-menu" id="MenuNav">
+            <div class="navbar-start">
+                <a href="index.html" class="navbar-item">
+                    Sākumlapa
+                </a>
+                <a href="contact.html" class="navbar-item">
+                    Serviss
+                </a>
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link">
+                    Par Mums
+                    </a>
+                <div class="navbar-dropdown">
+                    <a href="contact.html" class="navbar-item">
+                        Kontakti
+                    </a>
+                    <a href="location.html" class="navbar-item">
+                        Lokācija
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+    </nav>
+    <main>
+    <div class="carousel">
+        <button class="carousel_button carousel_button--left is-hidden">
+            <img src="images/arrow-right.png" alt="" style="transform: scaleX(-1)">
+        </button>
+        <div class="carousel_track-container">
+            <ul class="carousel_track">
+                <li class="carousel_slide current-slide">
+                    <img class="carousel_image" src="images/slide1.jpg" alt="">
+                </li>
+                <li class="carousel_slide">
+                    <img class="carousel_image" src="images/slide2.jpg" alt="">
+                </li>
+                <li class="carousel_slide">
+                    <img class="carousel_image" src="images/slide3.jpg" alt="">
+                </li>
+            </ul> 
+        </div>
+        <button class="carousel_button carousel_button--right">
+            <img src="images/arrow-right.png" alt="">
+        </button>
+        <div class="carousel_nav">
+            <button class="carousel_indicator current-slide"></button>
+            <button class="carousel_indicator"></button>
+            <button class="carousel_indicator"></button>
+        </div>
+    </div>
+    
+    <div class="productList">
+        <div class="first">
+            <a href="traktori.html"><button class="button traktori"><h1>Mauriņa traktori</h1></button></a>
+            <a href="zagi.html"><button class="button zagi"><h1>Zāģi</h1></button></a>
+            <a href="trimmeri.html"><button class="button trimmeri"><h1>Trimmeri</h1></button></a>
+        </div>
+        <div class="second">
+            <a href="zp.html"><button class="button zp"><h1>Zāles pļāvēji</h1></button></a>
+            <a href="motori.html"><button class="button motori"><h1>Motori</h1></button></a>
+            <a href="frezes.html"><button class="button frezes"><h1>Frēzes</h1></button></a>
+
+        </div>
+    </div>
+    <section class="sidebar">
+        <div class="columns">
+                <div class="menu">
+                    <ul class="menu-list">
+                        <li><a href="sliedes.html" class="menu-item"><span class="text">Sliedes</span></a></li>
+                        <li><a href="SKR" class="menu-item"><span class="text">Ķēdes</span></a></li>
+                        <li><a href="SKR" class="menu-item"><span class="text">Auklas</span></a></li>
+                        <li><a href="SKR" class="menu-item"><span class="text">Siksnas</span></a></li>
+                        <li><a href="SKR" class="menu-item"><span class="text">Gaisa Filtri</span></a></li>
+                        <li><a href="SKR" class="menu-item"><span class="text">Uzkabes</span></a></li>
+                        <li><a href="SKR" class="menu-item"><span class="text">Eļļas</span></a></li>
+                    </ul>
+                </div>
+        </div>
+    </section>
+</main>
+</body>
+</html>
